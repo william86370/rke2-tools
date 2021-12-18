@@ -2,3 +2,4 @@ kubeconfig
 *.pem
 id_rsa
 *.crt
+installrke2-server.sh
