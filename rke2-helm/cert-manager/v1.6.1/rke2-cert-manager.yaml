@@ -1,11 +1,19 @@
 #RKE2 Has a helm CRD allowing for helm chart install to a cluster using a CRD yaml
+
+# Create the namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cert-manager
+---
+# Create the helm chart Deployment
 apiVersion: helm.cattle.io/v1
 kind: HelmChart
 metadata:
   name: cert-manager
   namespace: kube-system
 spec:
-  chart: cert-manager/cert-manager
+  chart: cert-manager
   targetNamespace: cert-manager
   version: 1.6.1
   helmVersion: v3
