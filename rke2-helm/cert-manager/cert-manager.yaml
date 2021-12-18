@@ -1,0 +1,12 @@
+#RKE2 Has a helm CRD allowing for helm chart install to a cluster using a CRD yaml
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: cert-manager
+  namespace: kube-system
+spec:
+  chart: jetstack/cert-manager
+  targetNamespace: cert-manager
+  version: v1.6.1
+  helmVersion: v3
+  repo: https://charts.jetstack.io

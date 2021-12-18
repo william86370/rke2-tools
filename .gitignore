@@ -1,0 +1,4 @@
+kubeconfig
+*.pem
+id_rsa
+*.crt
