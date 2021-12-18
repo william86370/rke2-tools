@@ -7,6 +7,6 @@ metadata:
 spec:
   chart: jetstack/cert-manager
   targetNamespace: cert-manager
-  version: v1.6.1
+  version: 1.6.1
   helmVersion: v3
   repo: https://charts.jetstack.io
