@@ -1,6 +1,7 @@
 # cert-manager CRD's /var/lib/rancher/rke2/server/manifests
 
-#https://github.com/jetstack/cert-manager/releases/download/v1.6.1/cert-manager.crds.yaml
+# https://github.com/jetstack/cert-manager/releases/download/v1.6.1/cert-manager.crds.yaml
+# https://raw.githubusercontent.com/william86370/rke2-tools/main/rke2-helm/cert-manager/v1.6.1/cert-manager-crd.yaml
 
 # Copyright 2021 The cert-manager Authors.
 #
