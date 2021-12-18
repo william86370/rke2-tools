@@ -1,0 +1,23 @@
+#RKE2 Has a helm CRD allowing for helm chart install to a cluster using a CRD yaml
+# Create the namespace
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: cattle-system
+---
+apiVersion: helm.cattle.io/v1
+kind: HelmChart
+metadata:
+  name: rancher
+  namespace: kube-system
+spec:
+  chart: rancher
+  targetNamespace: cattle-system
+  version: 2.6.2
+  helmVersion: v3
+  repo: https://releases.rancher.com/server-charts/stable
+  set: 
+    letsEncrypt.email: "admin@yourdomain.com"
+    ingress.tls.source: "letsEncrypt"
+    bootstrapPassword: "changmeplz"
+    hostname: "example.yourdomain.com"

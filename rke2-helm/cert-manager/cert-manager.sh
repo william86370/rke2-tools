@@ -22,7 +22,3 @@ CHART_REPO=cert-manager
 CHART_VERSION=v1.6.1
 CHART_NAME=rke2-cert-manager
 install_chart
-
-# curl -sfL https://raw.githubusercontent.com/william86370/rke2-tools/main/rke2-helm/cert-manager/cert-manager.sh | sh -
-# Delete The new addon
-# kubectl delete -n kube-system addon rke2-cert-manager-crds
